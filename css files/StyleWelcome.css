@@ -1,10 +1,11 @@
-{
+
+.h1{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+ 
 .hero{
     width: 100%;
     height: 100vh;
@@ -14,9 +15,9 @@
     display:flex;
     align-items: center;
     justify-content: center;
-
+ 
 }
-
+ 
 .content{
 text-align: center;
 }
@@ -31,7 +32,27 @@ text-align: center;
     color: rgb(0, 0, 0);
     font-size: 24px;
     border: 2px solid rgb(0, 0, 0);
-    padding: 14px 70px;
+    padding: 14px 14px;
     border-radius: 50px;
     margin-top: 20px;
 }
+
+.back-video{
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+.back-video{
+    width: 100%;
+    height: auto;
+ }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+     }
+    }

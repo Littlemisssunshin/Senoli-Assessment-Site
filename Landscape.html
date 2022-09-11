@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css files/StyleArchitecture.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscapes</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+</head>
+<div class="container">
+    <div class="topnav">
+    
+     
+        <a class="active" href="Landscape.html">Landscapes</a>
+        <a href="Home.html">Home</a>
+        <a href="Interiors.html">Interiors</a>
+        <a href="Architecture.html">Architecture</a>
+        <a href="AboutUS.html">About Us</a>
+      </div>
+<center>
+<h1>Our Landscaping Projects </h1>
+</center>
+<body>
+    
+</body>
+<center>
+<h2>Main Projects</h2>
+
+</center>
+<style>
+
+</style>
+<center>
+<h4>Stonefields</h4>
+
+</center>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="Images/paul-bangay-stonefields-house-rear-facade.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/paul-bangay-stonefields-privet-entry-wall.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/paul-bangay-stonefields-rear-garden-seating.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/paul-bangay-stonefields-rear-pool.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/PBOGfacebookimage.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<center>
+<h4>Hurstville</h4>
+</center>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="Images/Hurstville02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Images/Hurstville04.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Images/Hurstville29.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Images/Hurstville51-39.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="Images/Hurstville80-67.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<center>
+<h2>Other projects</h2>
+</center>
+
+<center>
+<table class="center"
+  <tr>
+    <td> <img src="Images/6-Cover.png" height=230" width="330"/> </td>
+    <td> <img src="Images/bali_paradise_homepage_hero.jpg" height="230" width="330"/> </td>
+    <td> <img src="Images/balmain-banner1-copy.jpg" height="230" width="330"/> </td>
+  </tr>
+  <tr>
+    <td> <img src="Images/c5e2648a487d86f73ef4d5ced624715c.jpg"height=230" width="330" /> </td>
+    <td> <img src="Images/chatswood-garden-design-sydney.jpg"height=230" width="330"/> </td>
+    <td> <img src="Images/Garden-Maintenance-1.jpg"height=230" width="330"/> </td>
+  </tr>
+  <tr>
+    <td> <img src="Images/HL_Project_L_LandscapeDesign__0005_Home-Screen-Banner.jpg"height=230" width="330"/> </td>
+    <td> <img src="Images/HL_Project_L_LandscapeDesign__0006_170309_Harrisons_Bondi_0048.jpg"height=230" width="330"/> </td>
+    <td> <img src="Images/Standard-Front-Landscape-Plan-537.jpg"height=230" width="330"/> </td>
+  </tr>
+
+</center>
+</body>
+
+</html>
